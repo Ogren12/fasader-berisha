@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FASADER BERISHA | Fasada & Ndërtim</title>
+
+    <meta name="description" content="FASADER BERISHA - Punime profesionale të fasadave, termoizolimit, suvatimit, gletit, dekorimeve, Knauf dhe molerit në Kosovë.">
+    <meta name="keywords" content="fasada, fasader, termoizolim, suvatim, glet, Knauf, moler, dekorime, ndërtim, Kosovë, Klinë">
+    <meta name="author" content="FASADER BERISHA">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0b;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.96);
+            border-bottom: 1px solid #242424;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            min-height: 78px;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #ff8c00;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ddd;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff8c00;
+        }
+
+        .nav-button {
+            background: #ff8c00;
+            color: #111 !important;
+            padding: 11px 18px;
+            border-radius: 7px;
+            font-weight: 800 !important;
+        }
+
+        .nav-button:hover {
+            background: #ff9f2e;
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.78)
+                ),
+                url("fasada1.jpg") center center / cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 40px 20px;
+        }
+
+        .hero-content .small-title {
+            color: #ff8c00;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 8vw, 92px);
+            line-height: 0.95;
+            font-weight: 900;
+            letter-spacing: -3px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #ff8c00;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 4vw, 38px);
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        .hero-buttons {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 7px;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #ff8c00;
+            color: #111;
+        }
+
+        .btn-primary:hover {
+            background: #ffa333;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #111;
+            transform: translateY(-3px);
+        }
+
+        /* ================= GENERAL ================= */
+
+        section {
+            padding: 90px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+            display: block;
+            color: #ff8c00;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 900;
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: 12px auto 0;
+            color: #999;
+        }
+
+        /* ================= SERVICES ================= */
+
+        #sherbimet {
+            background: #101010;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #171717;
+            border: 1px solid #272727;
+            border-radius: 12px;
+            padding: 30px 22px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            border-color: #ff8c00;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }
+
+        .service-icon {
+            font-size: 35px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* ================= WHY US ================= */
+
+        #pse-ne {
+            background: #0b0b0b;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 35px 20px;
+            border: 1px solid #242424;
+            border-radius: 12px;
+            background: #111;
+        }
+
+        .why-card .number {
+            font-size: 38px;
+            font-weight: 900;
+            color: #ff8c00;
+            margin-bottom: 10px;
+        }
+
+        .why-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .why-card p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* ================= GALLERY ================= */
+
+        #galeria {
+            background: #101010;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            background: #181818;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+            background: linear-gradient(
+                transparent,
+                rgba(0,0,0,0.8)
+            );
+        }
+
+        .gallery-overlay h3 {
+            font-size: 20px;
+        }
+
+        /* ================= ABOUT ================= */
+
+        #rreth-nesh {
+            background: #0b0b0b;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: clamp(32px, 5vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .about-text h2 span {
+            color: #ff8c00;
+        }
+
+        .about-text p {
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .highlight {
+            padding: 20px;
+            border-radius: 10px;
+            background: #151515;
+            border: 1px solid #252525;
+        }
+
+        .highlight strong {
+            display: block;
+            color: #ff8c00;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .highlight span {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        #kontakt {
+            background: #101010;
+        }
+
+        .contact-box {
+            max-width: 950px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            background: #171717;
+            border: 1px solid #282828;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .contact-card .icon {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 7px;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: #aaa;
+            font-size: 15px;
+        }
+
+        .contact-card a:hover {
+            color: #ff8c00;
+        }
+
+        .facebook-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background: #1877f2;
+            color: white !important;
+            padding: 9px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #050505;
+            border-top: 1px solid #222;
+            text-align: center;
+            padding: 30px 20px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: #ff8c00;
+        }
+
+        /* ================= FLOATING CALL ================= */
+
+        .floating-call {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #ff8c00;
+            color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: bold;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            z-index: 999;
+            transition: 0.3s;
+        }
+
+        .floating-call:hover {
+            transform: scale(1.1);
+            background: #ffa333;
+        }
+
+        /* ================= LIGHTBOX ================= */
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.92);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 95%;
+            max-height: 90vh;
+            border-radius: 8px;
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 950px) {
+
+            .nav-links {
+                position: absolute;
+                top: 78px;
+                left: 0;
+                right: 0;
+                background: #0b0b0b;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                display: none;
+                border-bottom: 1px solid #222;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                text-align: center;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 16px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .services-grid,
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                padding: 0 18px;
+            }
+
+            .hero {
+                min-height: 85vh;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            section {
+                padding: 70px 18px;
+            }
+
+            .services-grid,
+            .why-grid,
+            .gallery-grid,
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                height: 300px;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-buttons .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#ballina" class="logo">
+                FASADER <span>BERISHA</span>
+            </a>
+
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#ballina">Ballina</a></li>
+                <li><a href="#sherbimet">Shërbimet</a></li>
+                <li><a href="#pse-ne">Pse Ne?</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#rreth-nesh">Rreth Nesh</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li>
+                    <a href="tel:044636609" class="nav-button">
+                        Na Kontaktoni
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="ballina">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                Punime profesionale
+            </div>
+
+            <h1>
+                FASADER <span>BERISHA</span>
+            </h1>
+
+            <h2>
+                Profesionalizëm në çdo detaj
+            </h2>
+
+            <p>
+                Fasada, termoizolime, suvatim, glet, dekorime,
+                Knauf dhe moler. Punime cilësore me përkushtim
+                dhe kujdes në çdo projekt.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="tel:044636609" class="btn btn-primary">
+                    📞 044-636-609
+                </a>
+
+                <a href="#galeria" class="btn btn-outline">
+                    Shiko Punimet
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="sherbimet">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Çfarë bëjmë</span>
+                <h2>Shërbimet Tona</h2>
+                <p>
+                    Ofrimi i punimeve profesionale për shtëpi,
+                    objekte dhe ambiente të ndryshme.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Fasada</h3>
+                    <p>
+                        Punime moderne dhe cilësore të fasadave
+                        për një pamje të bukur dhe të qëndrueshme.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌡️</div>
+                    <h3>Termoizolim</h3>
+                    <p>
+                        Izolim profesional për mbrojtje nga
+                        të ftohtit dhe nxehtësia.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🧱</div>
+                    <h3>Suvatim</h3>
+                    <p>
+                        Përgatitje dhe suvatim i mureve me
+                        përfundim të pastër dhe të rregullt.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Glet</h3>
+                    <p>
+                        Përpunim i mureve për sipërfaqe të
+                        lëmuara dhe perfekte për ngjyrosje.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Dekorime</h3>
+                    <p>
+                        Detaje dekorative që i japin objektit
+                        pamje moderne dhe elegante.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Knauf</h3>
+                    <p>
+                        Tavane, mure dhe konstruksione të ndryshme
+                        me Knauf.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🖌️</div>
+                    <h3>Moler</h3>
+                    <p>
+                        Ngjyrosje profesionale dhe përfundime
+                        të pastra të ambienteve.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Punime Ndërtimore</h3>
+                    <p>
+                        Punime të ndryshme ndërtimore me
+                        përkushtim dhe profesionalizëm.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY US ================= -->
+
+    <section id="pse-ne">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Pse të na zgjidhni?</span>
+                <h2>Cilësi që shihet</h2>
+                <p>
+                    Përkushtim në punë dhe kujdes në çdo detaj.
+                </p>
+            </div>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+                    <div class="number">01</div>
+                    <h3>Cilësi</h3>
+                    <p>
+                        Punime të realizuara me kujdes dhe standard të lartë.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="number">02</div>
+                    <h3>Profesionalizëm</h3>
+                    <p>
+                        Përvojë dhe përkushtim në çdo projekt.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="number">03</div>
+                    <h3>Besueshmëri</h3>
+                    <p>
+                        Respektojmë marrëveshjet dhe punojmë me korrektësi.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="number">04</div>
+                    <h3>Përkushtim</h3>
+                    <p>
+                        Çdo punë trajtohet me seriozitet nga fillimi deri në fund.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="galeria">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Punimet tona</span>
+                <h2>Galeria</h2>
+                <p>
+                    Disa nga punimet tona.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="fasada1.jpg" alt="Punim fasade FASADER BERISHA">
+                    <div class="gallery-overlay">
+                        <h3>Punim Fasade</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="fasada2.jpg" alt="Punim fasade FASADER BERISHA">
+                    <div class="gallery-overlay">
+                        <h3>Punim Profesional</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="fasada3.jpg" alt="Punim fasade FASADER BERISHA">
+                    <div class="gallery-overlay">
+                        <h3>Projekt i Përfunduar</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="rreth-nesh">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <div class="section-title" style="text-align:left; margin-bottom:25px;">
+                        <span>Rreth nesh</span>
+                        <h2>
+                            Punë e mirë.<br>
+                            <span>Rezultat i mirë.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        FASADER BERISHA merret me punime profesionale
+                        të fasadave dhe përfundimeve të ndryshme
+                        ndërtimore.
+                    </p>
+
+                    <p>
+                        Qëllimi ynë është që çdo klient të jetë i
+                        kënaqur me rezultatin dhe që çdo punim të
+                        realizohet me kujdes dhe profesionalizëm.
+                    </p>
+
+                    <a href="tel:044636609" class="btn btn-primary">
+                        Na Kontaktoni
+                    </a>
+
+                </div>
+
+                <div class="about-highlights">
+
+                    <div class="highlight">
+                        <strong>01</strong>
+                        <span>Punime cilësore</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>02</strong>
+                        <span>Profesionalizëm</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>03</strong>
+                        <span>Përkushtim</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>04</strong>
+                        <span>Korrektësi</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="kontakt">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Na kontaktoni</span>
+                <h2>Le të flasim për projektin tuaj</h2>
+                <p>
+                    Për më shumë informata ose për të diskutuar
+                    punimin tuaj, na kontaktoni.
+                </p>
+            </div>
+
+            <div class="contact-box">
+
+                <div class="contact-card">
+
+                    <div class="icon">📞</div>
+
+                    <h3>Telefon</h3>
+
+                    <a href="tel:044636609">
+                        044-636-609
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="icon">📍</div>
+
+                    <h3>Lokacioni</h3>
+
+                    <p>
+                        Klinë, Kosovë
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="icon">📘</div>
+
+                    <h3>Facebook</h3>
+
+                    <a
+                        href="https://www.facebook.com/100045112765993"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="facebook-btn"
+                    >
+                        Shiko Facebook
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 <strong>FASADER BERISHA</strong>.
+            Të gjitha të drejtat e rezervuara.
+        </p>
+
+        <p>
+            Klinë, Kosovë
+        </p>
+
+    </footer>
+
+
+    <!-- ================= FLOATING CALL ================= -->
+
+    <a
+        href="tel:044636609"
+        class="floating-call"
+        aria-label="Telefono FASADER BERISHA"
+    >
+        📞
+    </a>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close-lightbox" id="closeLightbox">
+            &times;
+        </span>
+
+        <img id="lightboxImage" src="" alt="Punim FASADER BERISHA">
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        /* MOBILE MENU */
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+            });
+
+        });
+
+
+        /* GALLERY LIGHTBOX */
+
+        const galleryItems = document.querySelectorAll(".gallery-item");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightboxImage");
+        const closeLightbox = document.getElementById("closeLightbox");
+
+        galleryItems.forEach(item => {
+
+            item.addEventListener("click", () => {
+
+                const image = item.querySelector("img");
+
+                lightboxImage.src = image.src;
+                lightboxImage.alt = image.alt;
+
+                lightbox.classList.add("active");
+
+            });
+
+        });
+
+        closeLightbox.addEventListener("click", () => {
+            lightbox.classList.remove("active");
+        });
+
+        lightbox.addEventListener("click", (e) => {
+
+            if (e.target === lightbox) {
+                lightbox.classList.remove("active");
+            }
+
+        });
+
+        document.addEventListener("keydown", (e) => {
+
+            if (e.key === "Escape") {
+                lightbox.classList.remove("active");
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
